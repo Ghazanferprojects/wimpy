@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body style="background: #F9FAFD;" !important>
+  <style>
+    .answer {
+      letter-spacing: 1px;
+      /* margin-bottom: 10px; */
+    }
+
+    ul.list-item.d-flex>li>a:hover {
+      border-bottom: 2px solid #000;
+      /* margin-top: -9px; */
+      /* transition: all 0.5s ease-in-out; */
+    }
+
+    .holder {
+      /* Clip edges, as some of the lines don't terminate nicely. */
+      overflow: hidden;
+      position: relative;
+      width: var(--width);
+      height: 50px;
+    }
+
+    .ellipse {
+      position: absolute;
+      background: radial-gradient(ellipse, transparent, transparent 7px, black 7px, black 10px, transparent 11px);
+      background-size: 36px 40px;
+      width: var(--width);
+      height: 20px;
+    }
+
+    .ellipse2 {
+      top: 20px;
+      left: 18px;
+      background-position: 0px -20px;
+    }
+
+    :root {
+      --width: 50%;
+    }
+
+    .holder {
+      /* overflow: hidden; */
+      position: relative;
+      width: var(--width);
+      height: 21px;
+      left: -25px;
+    }
+
+    .ellipse {
+      position: absolute;
+      background: radial-gradient(ellipse, transparent, transparent 7px, black 7px, black 10px, transparent 11px);
+      background-size: 27px 30px;
+      width: var(--width);
+      height: 13px;
+    }
+
+    .holder {
+      /* overflow: hidden; */
+      position: relative;
+      width: var(--width);
+      height: 21px;
+      left: -19px;
+    }
+
+    :root {
+      --width: 38%;
+    }
+
+    .holder {
+
+      margin-top: -8px;
+    }
+
+    .ellipse2 {
+      top: 6px;
+      /* left: 17px; */
+      background-position: -5px -19px;
+    }
+  </style>
+  <style>
+    @font-face {
+      font-family: myFirstsFont;
+      src: url(DiaryOfAWimpyKidFont-Regular.ttf);
+    }
+  </style>
+  <header>
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-3">
+          <div class="nav-item">
+
+            <ul class="list-item d-flex">
+
+              <li><a href="#" style="text-decoration: underline; font-family: myFirstsFont;">Home</a></li>
+
+              <li><a href="#" style="font-family: myFirstsFont;">Roadmap</a></li>
+              <li><a href="#" style="font-family: myFirstsFont;">Team</a></li>
+              <li><a href="#" style="font-family: myFirstsFont;">FAQ</a></li>
+            </ul>
+          </div>
+          <!-- <div class="holder">
+                    <div class="ellipse"></div>
+                    <div class="ellipse ellipse2"></div>
+                  </div>   -->
+        </div>
+        <div class="col-lg-4">
+          <div class="d-flex" id="navigate">
+            <div class="connect-btn">
+              <a href="#" class="connect-Wallet" style="font-family: myFirstsFont;">Connect Wallet</a>
+            </div>
+            <!-- <div class="setting-img"> -->
+            <div class="d-flex">
+              <a href="#"> <i class="fab fa-twitter"></i></a>
+              <a href="#"> <i class="fab fa-discord"></i></a>
+            </div>
+
+            <!-- </div> -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="banner" style="background-image: url(blue-Line.png) !important; background-image: url(blue-Line.png) !important;
+   background-repeat: no-repeat;
+   background-size: cover;
+ 
+   background-position: center;">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-2">
+          <div class="banner-img">
+            <img src="./images/banner-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="banner-content">
+            <h1 class="banner-hd" style="font-family: myFirstsFont;">5000 Kidz Released<br>
+              into the Wimpyverse </h1>
+            <!-- <p class="banner-para" style="font-family: myFirstsFont;">The massive influx of children left US immigration officials scrambling earlier<br>
+                            this year for facilities to house the children...</p> -->
+            <p class="banner-para" style="font-family: myFirstsFont;">0/5000 Minted<br>Mint date: TBA
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="banner-btn">
+                <a href="#" class="banner-btn" style="font-family: myFirstsFont;">Mint Coming Soon</a>
+              </div>
+              <!-- <div class="banner-btn1" >
+                                <a href="#" class="learnmore-btn" style="font-family: myFirstsFont;">Learn More</a>
+                            </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="banner-img1">
+            <img src="./images/banner-img1.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <section id="roadmap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="faq-hd text-center" style="font-family: myFirstsFont;">ROADMAP</h2>
+
+          <div class="separator"></div>
+          <p class="roadmap-para text-center" style="font-family: myFirstsFont;">As we value our community and its
+            creativity, our roadmap will be updated according to your comments and ideas.</p>
+           
+          <!-- <div class="roadmap-content ">
+            <div class="roadmap-img">
+              <img src="roadmap.png" alt="">
+              <h6 class="roamap-person" style="font-family: myFirstsFont;">0%</h6>
+            </div>
+            <div class="roamap-hd">
+              <h3 style="font-family: myFirstsFont;">WELCOME! LET'S BOARD OUR ROCKET!</h3>
+              <p class="roadmap-para1" style="font-family: myFirstsFont;">Buckle up and get ready. Join our Discord and
+                follow our social media pages. Then once we hit 25,000 members on Discord, we’ll raffle 5 wolves from
+                our ‘active’ members of the pack. Remember that you need to be an active member to be eligible for this!
+              </p>
+            </div>
+          </div> -->
+          <!-- <div class="roadmap-content ">
+            <div class="roadmap-img">
+              <img src="roadmap.png" alt="">
+              <h6 class="roamap-person" style="font-family: myFirstsFont;">25%</h6>
+            </div>
+            <div class="roamap-hd">
+              <h3 style="font-family: myFirstsFont;">PREPARING FOR OUR JOURNEY...</h3>
+              <p class="roadmap-para1" style="font-family: myFirstsFont;">Buckle up and get ready. Join our Discord and
+                follow our social media pages. Then once we hit 25,000 members on Discord, we’ll raffle 5 wolves from
+                our ‘active’ members of the pack. Remember that you need to be an active member to be eligible for this!
+              </p>
+            </div>
+          </div> -->
+          <!-- <div class="roadmap-content ">
+            <div class="roadmap-img">
+              <img src="roadmap.png" alt="">
+              <h6 class="roamap-person" style="font-family: myFirstsFont;">50%</h6>
+            </div>
+            <div class="roamap-hd">
+              <h3 style="font-family: myFirstsFont;">LET'S TAKE OFF TO THE FCKIN MOON AND HOWL!!!</h3>
+              <p class="roadmap-para1" style="font-family: myFirstsFont;">Buckle up and get ready. Join our Discord and
+                follow our social media pages. Then once we hit 25,000 members on Discord, we’ll raffle 5 wolves from
+                our ‘active’ members of the pack. Remember that you need to be an active member to be eligible for this!
+              </p>
+            </div>
+          </div> -->
+          <!-- <div class="roadmap-content ">
+            <div class="roadmap-img">
+              <img src="roadmap.png" alt="">
+              <h6 class="roamap-person" style="font-family: myFirstsFont;">75%</h6>
+            </div>
+            <div class="roamap-hd">
+              <h3 style="font-family: myFirstsFont;">FIRST STEP ON THE MOON!!</h3>
+              <p class="roadmap-para1" style="font-family: myFirstsFont;">Buckle up and get ready. Join our Discord and
+                follow our social media pages. Then once we hit 25,000 members on Discord, we’ll raffle 5 wolves from
+                our ‘active’ members of the pack. Remember that you need to be an active member to be eligible for this!
+              </p>
+            </div>
+          </div> -->
+          <!-- <div class="roadmap-content ">
+            <div class="roadmap-img">
+              <img src="roadmap.png" alt="">
+              <h6 class="roamap-person" style="font-family: myFirstsFont;">100%</h6>
+            </div>
+            <div class="roamap-hd">
+              <h3 style="font-family: myFirstsFont;">FIRST STEP ON THE MOON!!</h3>
+              <p class="roadmap-para1" style="font-family: myFirstsFont;">Buckle up and get ready. Join our Discord and
+                follow our social media pages. Then once we hit 25,000 members on Discord, we’ll raffle 5 wolves from
+                our ‘active’ members of the pack. Remember that you need to be an active member to be eligible for this!
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="roadmap-img">
+            <img src="Wimpy-done.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="faqs-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="faq-hd text-center" style="font-family: myFirstsFont;">Frequently Asked Question</h2>
+          <div class="separator"></div>
+
+          <div class="wrapper">
+
+            <div class="container201">
+              <div class="question mt-5" style="font-family: myFirstsFont;">
+                What is " The Wimpy Kidz NFT " ?
+              </div>
+              <div class="answercont" style="font-family: myFirstsFont;">
+                <div class="answer" style="font-family: myFirstsFont;">
+                  The Wimpy Kidz NFT is a spinoff of your favorite childhood characters brought into the Web3 space!
+                  These Kidz will grant you many different privileges ranging from discord roles, entry to giveaways,
+                  access to exclusive merch drops and, the best yet, access to the Wimpy Kidz Clubhouse! (Coming Soon)
+
+                  <br>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="collapseers">
+              <div class="container201" id="content21">
+                <div class="question" style="font-family: myFirstsFont;">
+                  When is the release date ?
+                </div>
+                <div class="answercont">
+                  <div class="answer" style="font-family: myFirstsFont;">
+                    As of now, there is no set date. The approximate release date is July 2022.
+
+                    <br>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container201">
+              <div class="question" style="font-family: myFirstsFont;">
+                Which Blockchain will The Wimpy Kidz be released on ?
+              </div>
+              <div class="answercont">
+                <div class="answer" style="font-family: myFirstsFont;">
+                  The Wimpy Kidz will be released on the Ethereum Blockchain.
+                  <br>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="container201" id="content21">
+              <div class="question" style="font-family: myFirstsFont;">
+                How much will it cost to mint a Wimpy Kid ?
+              </div>
+              <div class="answercont">
+                <div class="answer" style="font-family: myFirstsFont;">
+                  The mint price will be 0.15ETH
+                  <br>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="container201">
+              <div class="question" style="font-family: myFirstsFont;">
+                Is there a whitelist? If so, how do I get on it?
+              </div>
+              <div class="answercont">
+                <div class="answer" style="font-family: myFirstsFont;">
+                  Yes ! We currently do have a whitelist and look forward to adding more Kidz to it. In order to
+                  increase your chances of being added to the whitelist, make sure to show your support for the project
+                  on our Twitter and Discord :).
+                  <br>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="container201" id="content21">
+              <div class="question" style="font-family: myFirstsFont;">
+                What if I don't get on the whitelist? Will there be a sale open to the public?
+              </div>
+              <div class="answercont">
+                <div class="answer" style="font-family: myFirstsFont;">
+                  Yes, we will initially have a pre-sale for all the whitelisted members and any remaining non-minted
+                  Kidz will be released in the public sale.
+                  <br>
+
+                </div>
+              </div>
+            </div>
+            <div class="container201" id="">
+              <div class="question" style="font-family: myFirstsFont;">
+                How many Kidz will I be able to mint?
+              </div>
+              <div class="answercont">
+                <div class="answer" style="font-family: myFirstsFont;">
+                  There will be a limit of 3 per address.
+                  <br>
+
+                </div>
+              </div>
+            </div>
+            <div class="container201" id="content21">
+              <div class="question" style="font-family: myFirstsFont;">
+                When will my Wimpy Kidz be revealed?
+              </div>
+              <div class="answercont">
+                <div class="answer" style="font-family: myFirstsFont;">
+                  Upon minting your Wimpy Kid, it will be initially hidden. The reveal will happen 24-48hrs after the
+                  public sale goes live.
+                  <br>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer-img">
+            <img src="footer1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    let question = document.querySelectorAll(".question");
+
+    question.forEach(question => {
+      question.addEventListener("click", event => {
+        const active = document.querySelector(".question.active");
+        if (active && active !== question) {
+          active.classList.toggle("active");
+          active.nextElementSibling.style.maxHeight = 0;
+        }
+        question.classList.toggle("active");
+        const answer = question.nextElementSibling;
+        if (question.classList.contains("active")) {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        } else {
+          answer.style.maxHeight = 0;
+        }
+      })
+    })
+
+  </script>
+</body>
+
+</html>
